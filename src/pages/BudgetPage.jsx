@@ -27,7 +27,7 @@ export async function budgetLoader({ params }) {
   });
 
   if (!budget) {
-    throw new Error("The budget you’re trying to find doesn’t exist");
+    throw new Error("El presupuesto que estás intentando encontrar no existe");
   }
 
   return { budget, expenses };
@@ -45,9 +45,9 @@ export async function budgetAction({ request }) {
         amount: values.newExpenseAmount,
         budgetId: values.newExpenseBudget,
       });
-      return toast.success(`Expense ${values.newExpense} created!`);
+      return toast.success(`¡Gasto ${values.newExpense} creado!`);
     } catch (e) {
-      throw new Error("There was a problem creating your expense.");
+      throw new Error("Hubo un problema al crear su gasto.");
     }
   }
 
@@ -57,9 +57,9 @@ export async function budgetAction({ request }) {
         key: "expenses",
         id: values.expenseId,
       });
-      return toast.success("Expense deleted!");
+      return toast.success("¡Gasto eliminado!");
     } catch (e) {
-      throw new Error("There was a problem deleting your expense.");
+      throw new Error("Hubo un problema al eliminar su gasto.");
     }
   }
 }
@@ -84,7 +84,7 @@ const BudgetPage = () => {
       {expenses && expenses.length > 0 && (
         <div className="grid-md">
           <h2>
-            <span className="accent">{budget.name}</span> Expenses
+          Gastos del Presupuesto <span className="accent">{budget.name}</span>
           </h2>
           <Table expenses={expenses} showBudget={false} />
         </div>

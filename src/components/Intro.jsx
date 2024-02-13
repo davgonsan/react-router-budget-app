@@ -11,21 +11,21 @@ const Intro = () => {
     <div className="intro">
       <div>
         <h1>
-          Take Control of <span className="accent">Your Money</span>
+          Toma El Control de <span className="accent">Tu Dinero</span>
         </h1>
         <p>
-          Personal budgeting is the secret to financial freedom. Start your journey today.
+          El presupuesto personal es el secreto de la libertad financiera. Comience su viaje hoy.
         </p>
         <Form method="post">
           <input
             type="text"
             name="userName"
             required
-            placeholder="What is your name?" aria-label="Your Name" autoComplete="given-name"
+            placeholder="¿Cómo te llamas?" aria-label="Your Name" autoComplete="given-name"
           />
           <input type="hidden" name="_action" value="newUser" />
           <button type="submit" className="btn btn--dark">
-            <span>Create Account</span>
+            <span>Crear una cuenta</span>
             <UserPlusIcon width={20} />
           </button>
         </Form>

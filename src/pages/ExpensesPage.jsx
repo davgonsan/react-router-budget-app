@@ -27,9 +27,9 @@ export async function expensesAction({ request }) {
         key: "expenses",
         id: values.expenseId,
       });
-      return toast.success("Expense deleted!");
+      return toast.success("¡Gasto eliminado!");
     } catch (e) {
-      throw new Error("There was a problem deleting your expense.");
+      throw new Error("Hubo un problema al eliminar su gasto.");
     }
   }
 }
@@ -39,16 +39,16 @@ const ExpensesPage = () => {
 
   return (
     <div className="grid-lg">
-      <h1>All Expenses</h1>
+      <h1>Todos los gastos</h1>
       {expenses && expenses.length > 0 ? (
         <div className="grid-md">
           <h2>
-            Recent Expenses <small>({expenses.length} total)</small>
+            Gastos Recientes <small>({expenses.length} total)</small>
           </h2>
           <Table expenses={expenses} />
         </div>
       ) : (
-        <p>No Expenses to show</p>
+        <p>Sin gastos para mostrar</p>
       )}
     </div>
   );
