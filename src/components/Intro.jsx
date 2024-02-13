@@ -14,7 +14,9 @@ const Intro = () => {
           Toma El Control de <span className="accent">Tu Dinero</span>
         </h1>
         <p>
-          Crea un presupuesto para tus compras de forma rápida y sencilla.<br></br>Los datos que ingreses quedan almacenados en la caché de tu dispositivo, ya que no hacemos uso de ellos :)
+          Crea un presupuesto para tus compras de forma rápida y sencilla.
+          <br></br>
+          Los datos que ingreses quedan almacenados en la caché de tu dispositivo, ya que no hacemos uso de ellos :)
         </p>
         <Form method="post">
           <input
