@@ -14,7 +14,7 @@ const Intro = () => {
           Toma El Control de <span className="accent">Tu Dinero</span>
         </h1>
         <p>
-          El presupuesto personal es el secreto de la libertad financiera. Comience su viaje hoy.
+          El presupuesto personal es el secreto de la libertad financiera. Crea un presupuesto para tus compras de forma rápida y sencilla.
         </p>
         <Form method="post">
           <input
