@@ -75,7 +75,7 @@ const BudgetPage = () => {
       }}
     >
       <h1 className="h2">
-        <span className="accent">{budget.name}</span> Overview
+        Presupuesto <span className="accent">{budget.name}</span>
       </h1>
       <div className="flex-lg">
         <BudgetItem budget={budget} showDelete={true} />
